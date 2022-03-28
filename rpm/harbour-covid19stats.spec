@@ -4,7 +4,6 @@ Release:        1
 Summary:        COVID19 Stat app for Sailfish Os
 License:        GPLv3
 URL:            https://github.com/edp17/harbour-covid19stats
-BuildArch:      armv7hl
 Source0:        %{name}-%{version}.tar.gz
 Source1:        harbour-covid19stats
 Source2:        harbour-covid19stats.desktop
@@ -19,7 +18,6 @@ Covid19 Stat app for Sailfish Os.
 
 %prep
 %setup
-%patch0 -p1
 
 %install
 mkdir -p %{buildroot}/usr/share/harbour-covid19stats/qml/resources/flags
